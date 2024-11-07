@@ -31,7 +31,6 @@ public class EventService {
                 event.getEndDate(), event.getOrganizerId(), event.getMaxAttendees(), event.getFee());
     }
 
-    ;
 
     public void deleteEvent(String eventId) {
         eventRepository.deleteById(eventId);
@@ -72,9 +71,4 @@ public class EventService {
                 event.getFee()
         );
     }
-
-
-
-
-
 }
