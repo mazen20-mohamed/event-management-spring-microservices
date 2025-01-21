@@ -1,4 +1,6 @@
 spring:
+  config:
+    import: optional:ConfigService:http://localhost:8888
   application:
     name: ReservationService
   datasource:

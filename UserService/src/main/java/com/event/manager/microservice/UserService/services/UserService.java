@@ -33,7 +33,9 @@ public class UserService {
     }
 
     public User getUserByIdWithCheck(String userId){
-        return userRepository.findById(userId).orElseThrow(()->new NotFoundException("Not found a user with id" + userId));
+        return userRepository.findById(userId).orElseThrow(()
+                ->new NotFoundException("Not found a user with id" + userId));
     }
+
 
 }

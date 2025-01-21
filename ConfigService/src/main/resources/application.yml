@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ConfigService
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/MostafaAhmeedd/Config-Server
+          username: MostafaAhmeedd
+          password: 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
+          default-label: main
+          clone-on-start: true
+server:
+  port: 8888

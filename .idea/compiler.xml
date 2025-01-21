@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ReservationService" />
         <module name="EventService" />
+        <module name="ConfigService" />
         <module name="UserService" />
         <module name="EurekaService" />
       </profile>
@@ -16,6 +17,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ConfigService" options="-parameters" />
       <module name="EurekaService" options="-parameters" />
       <module name="EventService" options="-parameters" />
       <module name="ReservationService" options="-parameters" />
